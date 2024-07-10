@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px;
+  padding-top: 50px;
+}
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.checked {
+  background-color: gray;
+}
+.unchecked {
+  background-color: transparent;
+}
+.edit {
+  width: 24px;
+  height: 24px;
+}
+.delete {
+  width: 24px;
+  height: 24px;
+}
+.actioncONTAINER {
+  display: flex;
+  gap: 10px;
+}
+.save {
+  width: 30px;
+  height: 30px;
+}
+.actionItem {
+  align-self: center;
+}
+.deleteAll {
+  width: 130px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.lastContainer {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  cursor: pointer;
+}
+.lastPage {
+  background-color: gray;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.firstPage {
+  background-color: gray;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.firstPageDisabled,
+.lastPageDisabled {
+  background-color: transparent;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}

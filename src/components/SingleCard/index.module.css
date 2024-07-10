@@ -1,0 +1,10 @@
+.container {
+  border: 2px solid;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.container:hover {
+  box-shadow: 0px 0px 5px black;
+  transform: scale(1.03);
+}
