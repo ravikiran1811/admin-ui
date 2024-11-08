@@ -7,6 +7,7 @@ interface ListProps {
   heading: string;
   description: string;
   dragId: string;
+  width?: string;
 }
 
 interface ListDataProps {
@@ -15,7 +16,7 @@ interface ListDataProps {
 
 const Source: React.FC<ListDataProps> = ({ initialData }) => {
   return (
-    <Droppable droppableId="sourceItems">
+    <Droppable droppableId="sourceItems" direction="horizontal">
       {(provided) => (
         <div
           className={styles.container}
@@ -29,6 +30,7 @@ const Source: React.FC<ListDataProps> = ({ initialData }) => {
               index={index}
               heading={item.heading}
               description={item.description}
+              width={item.width}
             />
           ))}
           {provided.placeholder}

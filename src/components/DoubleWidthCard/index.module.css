@@ -1,7 +1,7 @@
 .container {
   border: 2px solid;
-  height: 356px;
-  width: 356px;
+  width: 400px;
+  height: 150px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -9,17 +9,10 @@
   box-shadow: 0px 0px 5px black;
   transform: scale(1.03);
 }
-
-.card {
-  margin: 0 8px;
-  padding: 16px;
-  background-color: lightblue;
-  user-select: none;
-}
 .widthContainer {
   border: 2px solid;
-  height: 356px;
-  width: 556px;
+  width: 200px;
+  height: 150px;
   cursor: pointer;
   transition: 0.2s;
 }

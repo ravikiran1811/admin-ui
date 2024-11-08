@@ -53,6 +53,7 @@ const DataRow: React.FC<dataPropsArray> = ({ data }) => {
 
   const [allCheckboxes, setAllCheckboxes] = React.useState(false);
   const tableHeaders = Object.keys(data[0]).filter((key) => key !== "id");
+  console.log("hello",tableHeaders);
 
   const onEdit = (index: string) => {
     setEditIndex(parseInt(index));

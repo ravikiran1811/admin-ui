@@ -10,7 +10,7 @@ interface SingleCardProps {
   width?: string;
 }
 
-const SingleCard: React.FC<SingleCardProps> = ({
+const DoubleWidthCard: React.FC<SingleCardProps> = ({
   heading,
   description,
   index,
@@ -19,10 +19,10 @@ const SingleCard: React.FC<SingleCardProps> = ({
 }) => {
   return (
     <Draggable draggableId={dragId} index={index}>
-      {(provided, snapshot) => (
+      {(provided) => (
         <div
           className={
-            width === "200px" ? styles.container : styles.widthContainer
+            width === "400px" ? styles.container : styles.widthContainer
           }
           ref={provided.innerRef}
           {...provided.draggableProps}
@@ -36,4 +36,4 @@ const SingleCard: React.FC<SingleCardProps> = ({
   );
 };
 
-export default SingleCard;
+export default DoubleWidthCard;
